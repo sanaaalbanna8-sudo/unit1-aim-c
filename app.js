@@ -1,9 +1,14 @@
 const SPEAKER = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 9v6h4l5 4V5L7 9H3zm13.5 3a4.5 4.5 0 0 0-2.5-4.03v8.06A4.5 4.5 0 0 0 16.5 12zM14 3.23v2.06a7 7 0 0 1 0 13.42v2.06a9 9 0 0 0 0-17.54z"/></svg>';
 
 const NAV = [
-  { title: "البداية", links: [
-    ["index.html#home", "خريطة الهدف ج"],
-    ["index.html#route", "مسار الاستعراض"]
+  { title: "البداية · من الحياة", links: [
+    ["index.html#home", "الحياة أولًا"],
+    ["index.html#scenes", "الشارع والامتحان والعمل"],
+    ["index.html#deduce", "سؤال الاستنتاج"],
+    ["index.html#concept", "السياسة والإجراء"],
+    ["index.html#bridge", "الجسر الرقمي"],
+    ["index.html#digital", "إشارات العالم الرقمي"],
+    ["index.html#route", "مسار بقية الدرس"]
   ]},
   { title: "ج1 · التهديدات", links: [
     ["c1.html#c1-open", "افتتاح التهديدات"],
@@ -72,14 +77,14 @@ const NAV = [
 
 const OFFSETS = {
   "index.html": 0,
-  "c1.html": 2,
-  "c2.html": 13,
-  "c3.html": 25,
-  "c4.html": 33,
-  "c5.html": 41,
-  "glossary.html": 51
+  "c1.html": 7,
+  "c2.html": 18,
+  "c3.html": 30,
+  "c4.html": 38,
+  "c5.html": 46,
+  "glossary.html": 56
 };
-const TOTAL = 53;
+const TOTAL = 58;
 
 function toast(message) {
   const el = document.getElementById("toast");

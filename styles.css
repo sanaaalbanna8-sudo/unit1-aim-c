@@ -193,6 +193,64 @@ p { margin: 0 0 8px; }
   padding: 2px 8px;
   margin-bottom: 6px;
 }
+.stages { display: flex; gap: 8px; flex-wrap: wrap; margin: 8px 0 14px; }
+.stages span {
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.18);
+  color: #f6f8f6;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 13px;
+  font-weight: 700;
+}
+.slide:not(.hero) .stages span {
+  background: #fff;
+  border-color: var(--line);
+  color: var(--pine);
+}
+.scene {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  overflow: hidden;
+  min-height: 100%;
+}
+.scene .art { display: block; width: 100%; height: 132px; }
+.scene .body { padding: 12px 14px 14px; }
+.scene h3 { margin-top: 4px; }
+.scene.street { border-top: 4px solid #d85a45; }
+.scene.exam { border-top: 4px solid #1c5460; }
+.scene.work { border-top: 4px solid #c4923a; }
+.kind {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 800;
+  border-radius: 999px;
+  padding: 2px 8px;
+  margin-bottom: 6px;
+}
+.kind.life { background: #f8e4df; color: #9d3b2c; }
+.kind.deduce { background: #e6def6; color: #4c3d72; }
+.kind.bridge { background: #e5f4f2; color: #0f6e6c; }
+.kind.digital { background: #e7eef3; color: #12343a; }
+.shields { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin: 10px 0; }
+.shields div {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 10px;
+  text-align: center;
+  font-weight: 800;
+  color: var(--pine);
+}
+.lights { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.lights article {
+  background: #12343a;
+  color: #f6f8f6;
+  border-radius: 16px;
+  padding: 12px;
+}
+.lights strong { display: block; color: var(--gold); margin-bottom: 4px; }
 .story .tag { background: #f0e2c8; color: #7a4e12; }
 .lab .tag { background: #d9ebf3; color: #184e62; }
 .think .tag { background: #e6def6; color: #4c3d72; }
@@ -442,7 +500,7 @@ tr:nth-child(even) td { background: #f6fafa; }
   .main { margin-right: 0; }
   .deck-bar { right: 0; }
   .menu-btn { display: inline-grid; place-items: center; }
-  .grid-2, .grid-3, .grid-4, .checks, .gloss, .flow, .principles, .statrow { grid-template-columns: 1fr; }
+  .grid-2, .grid-3, .grid-4, .checks, .gloss, .flow, .principles, .statrow, .shields, .lights { grid-template-columns: 1fr; }
   h1 { font-size: 30px; }
   .flow div { min-height: 0; }
 }
