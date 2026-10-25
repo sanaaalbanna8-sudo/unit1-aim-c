@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ج2 الحماية | الهدف ج</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Source+Sans+3:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="c2" data-prev="c1.html" data-next="c3.html">
+<div class="app">
+  <aside class="side" id="side"></aside>
+  <div class="main">
+    <header class="bar">
+      <button class="menu-btn" id="btnMenu" type="button">الأقسام</button>
+      <a href="index.html">الوحدة 1 · الهدف ج</a>
+      <nav class="quick">
+        <a href="index.html">البداية</a>
+        <a href="c1.html">التهديدات</a>
+        <a href="c2.html" aria-current="page">الحماية</a>
+        <a href="c3.html">الأخلاق</a>
+        <a href="c4.html">القانون</a>
+        <a href="c5.html">الإدارة</a>
+        <a href="glossary.html">معجم</a>
+      </nav>
+    </header>
+    <div class="deck">
+
+      <section class="slide hero" id="c2-open">
+        <p class="kicker">C2 · Protecting data</p>
+        <h1>الحماية سلسلة، وأضعف حلقة فيها عادةٌ مهملة</h1>
+        <p class="en-title">Processes and implications of techniques used to protect data and systems</p>
+        <p class="lead">الإجراء يحمي إن كان شاملًا ومحدَّثًا ويلتزم به الناس كل يوم. إجراء قديم، أو موظف واحد يلتف عليه، يعيد التهديد من الباب الذي ظننا أننا أغلقناه.</p>
+        <div class="grid-4">
+          <article class="card"><h3>الملف</h3><p>من يقرأه ومن يعدّله.</p></article>
+          <article class="card"><h3>الدور</h3><p>كل شخص يرى ما يحتاجه عمله فقط.</p></article>
+          <article class="card"><h3>النسخة</h3><p>نسخة بعيدة، واستعادة مجرَّبة.</p></article>
+          <article class="card"><h3>الباب</h3><p>كلمة سر، قفل شاشة، وشهادة، وجدار.</p></article>
+        </div>
+      </section>
+
+      <section class="slide" id="permissions">
+        <p class="kicker">C2 · File permissions</p>
+        <h2>أذن للملف: قراءة، أو قراءة وتعديل</h2>
+        <p class="en-title">File permissions</p>
+        <div class="grid-2">
+          <svg class="diagram" viewBox="0 0 460 230" role="img" aria-label="ملف الوصفة للقراءة فقط وملف السجل قابل للتعديل من الطبيب">
+            <rect x="30" y="40" width="180" height="150" rx="14" fill="#e5f4f2" stroke="#1f7a78"/>
+            <text x="120" y="78" text-anchor="middle" fill="#1f7a78" font-size="16">نموذج الوصفة</text>
+            <text x="120" y="112" text-anchor="middle" fill="#12343a" font-size="15">قراءة فقط</text>
+            <text x="120" y="142" text-anchor="middle" fill="#52636c" font-size="13">التمريض يطبع</text>
+            <text x="120" y="164" text-anchor="middle" fill="#52636c" font-size="13">ولا يغيّر الأصل</text>
+            <rect x="250" y="40" width="180" height="150" rx="14" fill="#12343a"/>
+            <text x="340" y="78" text-anchor="middle" fill="#e0b15a" font-size="16">سجل المريض</text>
+            <text x="340" y="112" text-anchor="middle" fill="#fff" font-size="15">تعديل مسموح</text>
+            <text x="340" y="142" text-anchor="middle" fill="#d5e4e2" font-size="13">للطبيب المعالج</text>
+            <text x="340" y="164" text-anchor="middle" fill="#d5e4e2" font-size="13">من حسابه</text>
+          </svg>
+          <div>
+            <p>تقييد الوصول يتم بكلمة مرور على الملف، أو بجعله <span class="t" data-en="Read-only" data-say="read only">للقراءة فقط</span> حتى لا يعدّله من يحتاج أن يراه فقط. المشاركة مع زميل لا تعني منحه حق المسح.</p>
+            <article class="story">
+              <span class="tag">نبض</span>
+              <p>نموذج التقرير الطبي قالب ثابت. جعله للقراءة فقط يمنع أن تُحفظ ملاحظة اليوم فوق القالب فيضيع النموذج على الجميع.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide" id="access">
+        <p class="kicker">C2 · Access levels</p>
+        <h2>كل دور يرى الطبقة التي يعمل عليها</h2>
+        <p class="en-title">Access levels</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>الدور في نبض</th><th>ما يفتحه</th><th>ما يبقى مغلقًا</th></tr></thead>
+            <tbody>
+              <tr><td>الاستقبال</td><td>الموعد والهاتف</td><td>تشخيص الطبيب ومرفقات المختبر</td></tr>
+              <tr><td>التمريض</td><td>الموعد وملاحظات العناية</td><td>حسابات المرضى والدفع</td></tr>
+              <tr><td>المحاسبة</td><td>الفاتورة وطريقة الدفع</td><td>تفاصيل الحالة الطبية</td></tr>
+              <tr><td>الطبيب</td><td>السجل الطبي لمن يعالجه</td><td>رواتب الموظفين</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>هذا معنى <span class="t" data-en="Access level" data-say="access level">مستوى الوصول</span>: عدد أقل من الناس يستطيع إتلاف البيانات أو قراءتها. في قاعدة البيانات، قد يُسمح لشخص بالاستعلام، ويُطلب إذن خاص لإضافة سجل أو حذفه.</p>
+      </section>
+
+      <section class="slide" id="backup">
+        <p class="kicker">C2 · Backup and recovery</p>
+        <h2>النسخة التي على الجهاز نفسه تغرق معه</h2>
+        <p class="en-title">Backup and recovery procedures</p>
+        <div class="grid-2">
+          <div>
+            <article class="card">
+              <h3><span class="t" data-en="Incremental backup" data-say="incremental backup">نسخ تزايدي</span></h3>
+              <p>ينسخ ما تغيّر منذ النسخة السابقة. مناسب كل يوم لملفات المواعيد لأنه أصغر وأسرع.</p>
+            </article>
+            <article class="card">
+              <h3><span class="t" data-en="Full backup" data-say="full backup">نسخ كامل</span></h3>
+              <p>نسخة لكل شيء في موعد أبعد، شهريًا مثلًا، حسب حجم المؤسسة. يشمل الملفات ومحتويات الخوادم والعمليات.</p>
+            </article>
+            <article class="impact good">
+              <h3><span class="t" data-en="Disaster recovery" data-say="disaster recovery">الاسترداد بعد كارثة</span></h3>
+              <p>خطة تعيد العمل إلى نقطة معروفة. المؤسسات الكبيرة تجهّز موقعًا بديلًا، أو نسخة خارج المبنى، أو عقدًا مع جهة تشغّل النسخ في مركز خوادم متنقل خلال ساعات.</p>
+            </article>
+          </div>
+          <div>
+            <svg class="diagram" viewBox="0 0 420 280" role="img" aria-label="ثلاث نسخ: الجهاز، قرص خارج المكتب، ونسخة سحابية في بلد معروف">
+              <rect x="30" y="30" width="110" height="70" rx="10" fill="#fdecea" stroke="#d85a45"/>
+              <text x="85" y="62" text-anchor="middle" fill="#9d3b2c" font-size="14">الجهاز</text>
+              <text x="85" y="82" text-anchor="middle" fill="#9d3b2c" font-size="12">الأصل</text>
+              <rect x="155" y="110" width="110" height="70" rx="10" fill="#f4efe4" stroke="#c4923a"/>
+              <text x="210" y="142" text-anchor="middle" fill="#7a4e12" font-size="14">قرص خارجي</text>
+              <text x="210" y="162" text-anchor="middle" fill="#7a4e12" font-size="12">في درج آخر</text>
+              <rect x="280" y="190" width="110" height="70" rx="10" fill="#e5f4f2" stroke="#1f7a78"/>
+              <text x="335" y="222" text-anchor="middle" fill="#12343a" font-size="14">نسخة بعيدة</text>
+              <text x="335" y="242" text-anchor="middle" fill="#12343a" font-size="12">بلدها معروف</text>
+              <path d="M85 100 V145 H155" fill="none" stroke="#1c5460" stroke-width="2"/>
+              <path d="M210 180 V210 H280" fill="none" stroke="#1c5460" stroke-width="2"/>
+            </svg>
+            <p class="cap">الاستعادة التلقائية، مثل التراجع عن حذف أو استرداد ملف بعد إغلاق مفاجئ، تساعد الفرد. المؤسسة تحتاج الخطة المكتوبة فوق ذلك. واختبار الاستعادة جزء من الإجراء، لأن نسخة لا تُفتح نسخة شكلية.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide" id="passwords">
+        <p class="kicker">C2 · Passwords</p>
+        <h2>كلمة السر تُعامل كرقم البطاقة</h2>
+        <p class="en-title">Passwords</p>
+        <div class="grid-3">
+          <article class="card">
+            <h3>واضحة</h3>
+            <div class="meter"><span class="low"></span></div>
+            <p><bdi>nabd123</bdi> قصيرة، وفيها اسم المكان. تُعاد على البريد وعلى الحجوزات. تسريب واحد يفتح الباقي.</p>
+          </article>
+          <article class="card">
+            <h3>محفوظة في ملف</h3>
+            <div class="meter"><span class="mid"></span></div>
+            <p>كلمة طويلة داخل مستند اسمه «كلمات السر» على سطح المكتب. الملف أصبح المفتاح كله.</p>
+          </article>
+          <article class="card">
+            <h3>طويلة ومتنوعة</h3>
+            <div class="meter"><span class="high"></span></div>
+            <p>من 12 إلى 14 رمزًا، فيها أحرف كبيرة وصغيرة وأرقام ورموز، ومختلفة لكل حساب. مثال الشكل فقط، لا يُستخدم نفسه لأنه صار عامًا على هذه الشريحة.</p>
+          </article>
+        </div>
+        <article class="def">
+          <p>لا تُشارَك كلمة السر مع من نثق به. المواقع المالية قد تطلب كلمة إضافية. من يخاف النسيان يستخدم <span class="t" data-en="Password manager" data-say="password manager">مخزن كلمات سر</span> مثل 1Password أو LastPass، بدل دفتر على الجهاز أو ملف نصي.</p>
+        </article>
+      </section>
+
+      <section class="slide" id="physical">
+        <p class="kicker">C2 · Physical access control</p>
+        <h2>الشاشة المفتوحة باب، حتى وأنت في المبنى</h2>
+        <p class="en-title">Physical access control</p>
+        <div class="grid-2">
+          <article class="story">
+            <span class="tag">استراحة عشر دقائق</span>
+            <p>طبيب نبض يترك العيادة والجهاز على سجل المريض. من يدخل الغرفة يرى التشخيص. قفل الشاشة، أو إيقاف التشغيل، أو أخذ الجهاز إن كان لوحيًا، يغلق هذا الباب الفوري. والخروج الكامل من الحساب أغلق من تصغير النافذة.</p>
+          </article>
+          <article class="def">
+            <h3><span class="t" data-en="Physical access control" data-say="physical access control">التحكم الفعلي في الوصول</span></h3>
+            <ul>
+              <li>قفل الجلسة عند مفارقة الجهاز.</li>
+              <li>تسجيل خروج من النظام ومن الحسابات.</li>
+              <li>أبواب لغرف الخوادم، ومن يسجّل دخوله إليها.</li>
+              <li>حماية الكوابل ونقاط الشبكة حتى لا يُوصَل جهاز غريب في الممر.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="slide" id="certificates">
+        <p class="kicker">C2 · Digital certificates and protocols</p>
+        <h2>الشهادة تثبت الهوية، والبروتوكول يرتب الكلام</h2>
+        <p class="en-title">Digital certificates and security protocols</p>
+        <div class="grid-2">
+          <article class="card">
+            <h3><span class="t" data-en="Digital certificate" data-say="digital certificate">شهادة رقمية</span></h3>
+            <p>رمز فريد تصدره جهة تحقق، يُشبه جواز السفر في المعاملة: تحويل مال أو طلب كشف حساب. وتُسمى أحيانًا شهادة المفتاح العام. هيئة الشهادات تصدرها أيضًا للمواقع حتى يعمل قفل <bdi>https</bdi>.</p>
+            <p>في نبض: موقع الحجوزات بشهادة سارية يعني أن المتصفح يتحدث مع موقع العيادة، لا مع صفحة تشبه اسمها.</p>
+          </article>
+          <article class="card">
+            <h3><span class="t" data-en="Protocol" data-say="Protocol">بروتوكول</span></h3>
+            <p>اتفاق بين الأجهزة على طريقة الاتصال. لنقل البيانات بأمان يُستخدم تشفير <span class="t" data-en="SSL" data-say="S S L, Secure Sockets Layer">طبقة المقابس الآمنة</span> أو <span class="t" data-en="TLS" data-say="T L S, Transport Layer Security">أمان طبقة النقل</span>، وكلاهما يعتمد تشفير المفتاح العام.</p>
+            <p>وهناك بروتوكولات بشرية: قواعد كلمة السر، وقواعد استخدام الجهاز. كثرتها تصعّب التذكر، لذلك تُجمع في صفحة واحدة ويُدرَّب عليها الناس.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="slide" id="antivirus">
+        <p class="kicker">C2 · Antivirus software</p>
+        <h2>مكافحة الفيروسات تفحص الملف، ولها ثمن على الجهاز</h2>
+        <p class="en-title">Features, characteristics and implications of antivirus software</p>
+        <div class="grid-2">
+          <div>
+            <p>برامج مثل <bdi>Kaspersky</bdi> و<bdi>McAfee</bdi> و<bdi>AVG</bdi> و<bdi>Norton</bdi>، كما يذكرها المنهج، تبحث عن محاولات إتلاف النظام أو الملفات وتوقفها. تعمل قبل بدء الاستخدام، وتبقى شغّالة، وتحدّث قواعدها. بعضها يجلب التحديثات عبر السحابة.</p>
+            <ul class="steps">
+              <li><span class="t" data-en="Real-time scanning" data-say="real time scanning">فحص آني</span> عند فتح الملف أو حفظه.</li>
+              <li>فحص كامل للجهاز في موعد دوري.</li>
+              <li>تحليل يبحث عن سلوك يشبه الفيروسات، إضافة إلى الفيروس المعروف.</li>
+              <li>قاعدة تعريفات تتحدث حتى تعرف الجديد.</li>
+            </ul>
+          </div>
+          <div>
+            <article class="impact risk">
+              <h3>الأثر</h3>
+              <p>الفحص الدائم يزيد الحمل على المعالج والذاكرة والقرص. وعلى شبكة أوسع، أو عند استخدام السحابة، يزيد سطح التعرض، فتشتد الحاجة إلى التحديث. برنامج متوقف «لتسريع الجهاز» يترك الملفات بلا فحص.</p>
+            </article>
+            <article class="lab" style="margin-top:8px">
+              <span class="tag">شخصي أم عيادة</span>
+              <p>النسخة المجانية قد تكفي جهازًا بيتًا إن كانت التعريفات تتحدث. العيادة تحتاج اشتراكًا يغطي عدة أجهزة، وإدارة مركزية، ودعمًا حين يصيب برنامج المواعيد عطل. قارن الميزات والتكلفة والتأثير في البرامج الأخرى قبل الاختيار.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide" id="firewall">
+        <p class="kicker">C2 · Firewalls</p>
+        <h2>الجدار يراقب الطريق، ولا يفتح الملف</h2>
+        <p class="en-title">Features, characteristics and implications of firewalls</p>
+        <div class="grid-2">
+          <svg class="diagram" viewBox="0 0 460 240" role="img" aria-label="جدار الحماية على الباب وبرنامج الفيروسات داخل الغرفة">
+            <rect x="70" y="30" width="320" height="180" rx="16" fill="#f7fbfb" stroke="#1c5460"/>
+            <text x="230" y="58" text-anchor="middle" fill="#12343a" font-size="15">شبكة العيادة</text>
+            <rect x="40" y="90" width="70" height="70" rx="10" fill="#d85a45"/>
+            <text x="75" y="122" text-anchor="middle" fill="#fff" font-size="13">الطريق</text>
+            <text x="75" y="142" text-anchor="middle" fill="#fff" font-size="13">العام</text>
+            <rect x="150" y="96" width="86" height="58" rx="8" fill="#12343a"/>
+            <text x="193" y="122" text-anchor="middle" fill="#fff" font-size="13">جدار</text>
+            <text x="193" y="140" text-anchor="middle" fill="#e0b15a" font-size="12">حماية</text>
+            <rect x="280" y="90" width="90" height="70" rx="10" fill="#e5f4f2" stroke="#1f7a78"/>
+            <text x="325" y="122" text-anchor="middle" fill="#12343a" font-size="13">فحص</text>
+            <text x="325" y="142" text-anchor="middle" fill="#12343a" font-size="13">الملفات</text>
+          </svg>
+          <div>
+            <p><span class="t" data-en="Firewall" data-say="Firewall">جدار الحماية</span> يقرر ما يدخل من حركة الشبكة وما يخرج. يختلف عمله عن مكافحة الفيروسات. قد يكون جهازًا داخل <span class="t" data-en="Router" data-say="Router">الموجّه</span>، أو برنامجًا على الجهاز نفسه. البرنامج المحلي أنسب للأفراد، ويُثبَّت على الجهاز لا على الشبكة فقط.</p>
+            <article class="def">
+              <p>الحماية البسيطة تغلق الدخول من الخارج. الحماية الأدق <span class="t" data-en="SPI" data-say="stateful packet inspection">فحص الحزم بحسب حالة الاتصال</span>: تنظر في مصدر الحزمة وهل تتبع اتصالًا قائمًا. ضبط الجدار مهارة، والخطأ فيه يبطئ الشبكة أو يفتح ما أردنا إغلاقه. المستخدم قد يضعفه ليدخل موقعًا محظورًا أو ليسرع الجهاز، لذلك السياسة تمنع إيقافه، والتحديث يأتي متى توفر.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide" id="encrypt-store">
+        <p class="kicker">C2 · Encryption of stored data</p>
+        <h2>تشفير ما هو محفوظ: ثلاثة أشكال</h2>
+        <p class="en-title">Encryption methods for stored data</p>
+        <div class="grid-3">
+          <article class="card">
+            <h3><span class="t" data-en="Hash" data-say="Hash">تجزئة</span></h3>
+            <p>توقيع بطول ثابت للنص. تفيد في معرفة أن الملف تغيّر، أو في حفظ أثر كلمة السر من غير حفظ الكلمة نفسها.</p>
+          </article>
+          <article class="card">
+            <h3><span class="t" data-en="Private key" data-say="private key encryption">مفتاح خاص</span></h3>
+            <p>المفتاح نفسه يشفّر ويفك. من يملكه يقرأ المحتوى. مناسب لملف العيادة إن بقي المفتاح عند من له حق الوصول.</p>
+          </article>
+          <article class="card">
+            <h3><span class="t" data-en="Public key" data-say="public key encryption">مفتاح عام</span></h3>
+            <p>المفتاح العام يشفّر باتجاه واحد. المفتاح الخاص السري المطابق هو الذي يفك. ننشر العام، ونحرس الخاص.</p>
+          </article>
+        </div>
+        <div class="grid-2">
+          <article class="impact risk"><h3>ضاع المفتاح</h3><p>قد يتعذر فك البيانات نهائيًا. لذلك حفظ المفتاح إجراء مستقل عن حفظ الملف.</p></article>
+          <article class="impact risk"><h3>وُزّع المفتاح</h3><p>طريقة إعطائه لمن يحق له تفتح خطرًا جديدًا: رسالة فيها المفتاح، أو نسخة على هاتف شخصي.</p></article>
+        </div>
+      </section>
+
+      <section class="slide" id="encrypt-transit">
+        <p class="kicker">C2 · Encryption during transmission</p>
+        <h2>البريد العادي بطاقة مكشوفة في الطريق</h2>
+        <p class="en-title">Encryption of data in transit</p>
+        <div class="grid-2">
+          <article class="def">
+            <p>البيانات في الطريق ليست آمنة لمجرد أنها «أُرسلت». بريد بنص عادي يستطيع من على المسار قراءته. تشفير الإرسال لازم للمعلومات السرية. صفحات <bdi>https</bdi> تستفيد من SSL أو TLS. ويمكن تشفير حركة الشبكة على نطاق أوسع.</p>
+            <p><span class="t" data-en="PGP" data-say="P G P, Pretty Good Privacy">الخصوصية الجيدة جدًا</span> تشفّر محتوى الرسالة. تسافر الرسالة، ولا تُقرأ بغير مفتاح فكها.</p>
+          </article>
+          <article class="story">
+            <span class="tag">جلسة بنك قُطعت</span>
+            <p>في المعاملة المصرفية تُشفَّر البيانات وتُفك عند صاحب الحساب. إن قام من الجهاز في مقهى، أو استخدم جهازًا عامًا، فمن يجلس بعده يرى الجلسة المفتوحة. الإجراء: أتمم العملية، أغلقها، وتجنب الأجهزة العامة للمال والمرضى.</p>
+          </article>
+        </div>
+        <p class="cap">إن انقطع النقل أثناء البيانات المشفرة فقد تكتمل عملية فك في الطرف الآخر في توقيت سيئ. لذلك تُغلق الجلسة الحساسة قبل الابتعاد، ولا تُترك على شاشة مشتركة.</p>
+      </section>
+
+      <section class="slide" id="protect-choice">
+        <p class="kicker">C2 · Match the first control</p>
+        <h2>أي إجراء نذكره أولًا؟</h2>
+        <p class="en-title">Choosing a control for a threat</p>
+        <p>اختر موقفًا من عيادة نبض. الجملة تقول أول إجراء يناسبه، لا كل الإجراءات الممكنة.</p>
+        <div data-picks>
+          <div class="match">
+            <button type="button" data-note="أول إجراء: نسخة بعيدة عن الجهاز ومجرَّبة. مكافحة الفيروسات تقلل الوصول إلى هنا، ولا تعيد ملفًا شُفّر.">فدية شفّرت المواعيد</button>
+            <button type="button" data-note="أول إجراء: قفل الشاشة وتسجيل الخروج. الصلاحيات لا تحمي شاشة تُركت مفتوحة على السجل.">طبيب ترك الجهاز في الاستراحة</button>
+            <button type="button" data-note="أول إجراء: تدريب يقول إن البنك لا يطلب كلمة السر، مع منع فتح المرفق. الجدار لا يقرأ نيّة الرسالة.">رسالة تشبه البنك</button>
+            <button type="button" data-note="أول إجراء: مستويات وصول. الاستقبال يرى الموعد، والتشخيص يبقى لحساب الطبيب.">موظفة فتحت تشخيصًا لا يخص عملها</button>
+            <button type="button" data-note="أول إجراء: كلمة طويلة مختلفة لكل حساب، داخل مخزن كلمات. تغيير كلمة واحدة بعد التسريب لا يكفي إن كانت تُستخدم في كل مكان.">كلمة واحدة للبريد والحجوزات</button>
+            <button type="button" data-note="أول إجراء: اتصال موقع بقفل شهادة سارية، وجدار على الموجّه. الشبكة العامة مكان سيئ لجلسة دفع مفتوحة.">دفع من شبكة المقهى</button>
+          </div>
+          <p class="pick-note">اختر موقفًا. الحماية الجيدة تسمي الإجراء الذي يغلق هذا الباب تحديدًا.</p>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</div>
+<div class="toast" id="toast" role="status"></div>
+<script src="app.js"></script>
+</body>
+</html>
