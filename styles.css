@@ -251,6 +251,13 @@ p { margin: 0 0 8px; }
   padding: 12px;
 }
 .lights strong { display: block; color: var(--gold); margin-bottom: 4px; }
+.qs { list-style: none; margin: 12px 0 0; padding: 0; display: grid; gap: 8px; }
+.qs li {
+  background: #f6f3fb;
+  border: 1px solid #ddd4ef;
+  border-radius: 12px;
+  padding: 8px 14px;
+}
 .story .tag { background: #f0e2c8; color: #7a4e12; }
 .lab .tag { background: #d9ebf3; color: #184e62; }
 .think .tag { background: #e6def6; color: #4c3d72; }
