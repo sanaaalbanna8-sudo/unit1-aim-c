@@ -251,12 +251,32 @@ p { margin: 0 0 8px; }
   padding: 12px;
 }
 .lights strong { display: block; color: var(--gold); margin-bottom: 4px; }
-.qs { list-style: none; margin: 12px 0 0; padding: 0; display: grid; gap: 8px; }
+.qs { margin: 14px 0 0; padding: 0; display: grid; gap: 10px; list-style: none; counter-reset: q; }
 .qs li {
+  counter-increment: q;
   background: #f6f3fb;
   border: 1px solid #ddd4ef;
-  border-radius: 12px;
-  padding: 8px 14px;
+  border-radius: 14px;
+  padding-block: 12px;
+  padding-inline: 52px 16px;
+  position: relative;
+  font-size: 18px;
+  line-height: 1.45;
+}
+.qs li::before {
+  content: counter(q);
+  position: absolute;
+  inset-inline-start: 14px;
+  top: 12px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #4c3d72;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 800;
+  display: grid;
+  place-items: center;
 }
 .story .tag { background: #f0e2c8; color: #7a4e12; }
 .lab .tag { background: #d9ebf3; color: #184e62; }
