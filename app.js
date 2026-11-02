@@ -116,6 +116,8 @@ function buildNav() {
         return `<a class="item${active ? " active" : ""}" href="${href}">${label}</a>`;
       }).join("")}
     `).join("")}
+    <h2>الامتحان</h2>
+    <a class="item" href="امتحان-ج/index.html">امتحان الفهم</a>
   `;
 }
 
